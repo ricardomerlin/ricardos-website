@@ -161,7 +161,7 @@ body ul {
     display: none;
     position: absolute;
     background-color: #f2648a;
-    color: rgb(211, 93, 93);
+    color: rgb(212, 162, 162);
     padding: 16px;
     font-size: 16px;
     width: 8%;
@@ -170,7 +170,7 @@ body ul {
 
 .dropdownSW {
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     height: 8vh;
     position: relative;
@@ -191,7 +191,7 @@ body ul {
     color: rgb(211, 93, 93);
     padding: 16px;
     font-size: 16px;
-    width: 8%;
+    width: 17%;
     text-align: center;
 }
 
@@ -218,6 +218,6 @@ body ul {
     color: rgb(211, 93, 93);
     padding: 16px;
     font-size: 16px;
-    width: 8%;
+    width: 20%;
     text-align: center;
 }
