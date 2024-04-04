@@ -4,20 +4,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>My Personal Website</title>        
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function generateRandomMultiple() {
+                let randomNumber = Math.floor(Math.random() * 100000); 
+                let multiple = 2 * randomNumber;
+                document.getElementById('randomMultiple').textContent = "Random Multiple of 2: " + multiple;
+            }
+            function comingSoonVG() {
+                let element = document.getElementById('notReadyVG');
+                element.textContent = "Coming Soon!";
+                setTimeout(function() {
+                    element.textContent = "Video Games I've Enjoyed";
+                }, 3000);
+            }
+            function comingSoonSW() {
+                let element = document.getElementById('notReadySW');
+                element.textContent = "Coming Soon!";
+                setTimeout(function() {
+                    element.textContent = "Star Wars Thoughts";
+                }, 3000);
+            }
+        </script>
     </head>
     <body>
         <div class="background"></div>
-        <h1>Ricardo Merlin</h1>
-        <h2 class="welcome-text">Welcome to my website. I'm currently in the early stages of my coding journey, but I believe I can create a website that is decently interesting. Feel free to look around :).</h2>
+        <h1 class="name">Ricardo Merlin</h1>
+        <h2 class="job-title">Software Engineer</h2>
+        <div class="pic-container">
+            <img src="./myimages/ricardo.jpeg" alt="Ricardo Merlin" class="profile-pic">
+        </div>
+        <h2 class="welcome-text">Welcome to my website. I'm currently in the early stages of my coding journey, and hopefully this website offers a bit about me away from the computer. Feel free to look around :).</h2>
         <div class="buttonList">
-            <a class="dropbtnGH" href="https://github.com/ricardomerlin">My Github!</a>
-            <a class="dropbtnLI" href="https://www.linkedin.com/in/ricardo-merlin">My LinkedIn!</a>
-            <a class="dropbtnMD" href="https://medium.com/@rcrdmerlin">My Medium!</a>
-            <a class="dropbtnST">Sports Thoughts</a>
+            <span class="personals">
+                <a class="logoGH" href="https://www.github.com/ricardomerlin">
+                    <img src="https://img.shields.io/badge/Github-black?style=for-the-badge&logo=github&logoColor=white" alt="Github Badge"/>
+                </a>
+                <a class="logoLI" href="https://www.linkedin.com/in/ricardo-merlin/">
+                    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+                </a>
+                <a class="logoMD" href="https://medium.com/@rcrdmerlin">
+                    <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium Badge"/>
+                </a>
+                <a class="logoGM" href="mailto:rcrdmerlin@gmail.com">
+                    <img src="https://img.shields.io/badge/Gmail-white?style=for-the-badge&logo=gmail&logoColor=red" alt="Gmail Badge"/>
+                </a>
+            </span>
             <a class="dropbtnLS" href="lego.html">Lego Set Price Reviews</a>
-            <a class="dropbtnSW">Star Wars Thoughts</a>
-            <a class="dropbtnVG">Video Games I've Enjoyed</a>
-            <a class="dropbtnR16">Random Multiple of 16 Generator</a>
+            <a class="dropbtnST">Sports Thoughts</a>
+            <a class="dropbtnSW" id="notReadySW" onclick="comingSoonSW()">Star Wars Thoughts</a>
+            <a class="dropbtnVG" id="notReadyVG" onclick="comingSoonVG()">Video Games I've Enjoyed</a>
+            <a class="dropbtnR16" id="randomMultiple" onclick="generateRandomMultiple()">Random Multiple of 2 Generator</a>
         </div>
     </body>
 </html>

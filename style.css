@@ -7,10 +7,15 @@
     z-index: -1;
     background-color: white;
 }
-h1 {
-        text-align: center;
-        text-wrap: pretty;
-        font-family: 'Courier New', Courier, monospace
+.name {
+    text-align: center;
+    text-wrap: pretty;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.job-title {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 @keyframes colorFade {
@@ -33,12 +38,24 @@ h1 {
 }
 
 .welcome-text {
-    margin-top: 100px;
+    margin-top: 35px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.profile-pic {
+    border-radius: 10px;
+    height: 400px;
 }
 
 .buttonList {
@@ -51,8 +68,19 @@ h1 {
     margin: 0;
 }
 
-.dropbtnGH {
-    background-color: #f2648a;
+.personals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropbtnGH:hover, .driobtnLI:hover, .dropbtnMD:hover, .dropbtnST:hover {
+    cursor: pointer;
+}
+
+.logoGH {
+    background-color: #000000;
     color: white;
     padding: 16px;
     margin: 15px;
@@ -62,13 +90,8 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.dropbtnGH:hover {
-    cursor: pointer;
-    background-color: rgb(0, 0, 0);
-}
-
-.dropbtnLI {
-    background-color: #f2648a;
+.logoLI {
+    background-color: rgb(0, 128, 197);
     color: white;
     padding: 16px;
     margin: 15px;
@@ -78,14 +101,8 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.dropbtnLI:hover {
-    cursor: pointer;
-    background-color: rgb(0, 119, 181);
-}
-
-.dropbtnMD {
-    background-color: #f2648a;
-    color: white;
+.logoMD {
+    background-color: #0f0f0f;
     padding: 16px;
     margin: 15px;
     font-size: 16px;
@@ -94,9 +111,14 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.dropbtnMD:hover {
-    cursor: pointer;
-    background-color: rgb(0, 0, 0);
+.logoGM {
+    background-color: rgb(255, 255, 255);
+    padding: 16px;
+    margin: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .dropbtnST {
@@ -108,6 +130,12 @@ h1 {
     border: none;
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.dropbtnST:hover {
+    cursor: pointer;
+    background-color: rgb(218, 41, 28);
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
 }
 
 .dropbtnLS {
@@ -138,6 +166,12 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.dropbtnSW:hover {
+    cursor: pointer;
+    background-color: rgb(218, 41, 28);
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+}
+
 .dropbtnVG {
     background-color: #f2648a;
     color: white;
@@ -147,6 +181,12 @@ h1 {
     border: none;
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.dropbtnVG:hover {
+    cursor: pointer;
+    background-color: rgb(218, 41, 28);
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
 }
 
 .dropbtnR16 {
@@ -165,7 +205,7 @@ h1 {
     background-color: blue;
 }
 
-a.dropbtnGH, a.dropbtnLI, a.dropbtnMD, a.dropbtnST, a.dropbtnLS, a.dropbtnSW, a.dropbtnVG, a.dropbtnR16 {
+a.dropbtnGH, a.dropbtnLI, a.dropbtnMD, a.dropbtnST, a.dropbtnLS, a.dropbtnSW, a.dropbtnVG, a.dropbtnR16, a.back-button {
     text-decoration: none;
 }
 
@@ -197,4 +237,22 @@ a.dropbtnGH, a.dropbtnLI, a.dropbtnMD, a.dropbtnST, a.dropbtnLS, a.dropbtnSW, a.
     margin-top: 10px;
     font-size: 20px;
     text-align: center;
+}
+
+.back-button {
+    background-color: #000000;
+    color: white;
+    padding: 8px;
+    left: 0;
+    top: 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.back-button:hover {
+    cursor: pointer;
+    background-color: rgb(218, 41, 28);
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
 }
