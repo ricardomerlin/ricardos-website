@@ -9,13 +9,16 @@
 }
 .name {
     text-align: center;
+    padding-top: 40px;
     text-wrap: pretty;
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
 }
 
 .job-title {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
 }
 
 @keyframes colorFade {
@@ -255,4 +258,10 @@ a.dropbtnGH, a.dropbtnLI, a.dropbtnMD, a.dropbtnST, a.dropbtnLS, a.dropbtnSW, a.
     cursor: pointer;
     background-color: rgb(218, 41, 28);
     text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+}
+
+.lego-reviews-title {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 40px;
 }
