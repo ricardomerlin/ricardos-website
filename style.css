@@ -19,6 +19,28 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+
 .job-title {
     text-align: center;
     font-size: 20px;
@@ -84,8 +106,6 @@ body {
     align-items: center;
     border: 2px solid black;
     border-radius: 10px;
-    margin-left: 25%;
-    margin-right: 25%;
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
 }
@@ -96,6 +116,20 @@ body {
 }
 
 .personals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-personals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-personals {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
