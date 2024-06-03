@@ -1,104 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ricardo Merlin</title>        
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script>
-            function generateRandomMultiple() {
-                let randomNumber = Math.floor(Math.random() * 100000); 
-                let multiple = 2 * randomNumber;
-                document.getElementById('randomMultiple').textContent = "Random Multiple of 2: " + multiple;
-            }
-            function comingSoonST() {
-                let element = document.getElementById('notReadyST');
-                element.textContent = "Coming Soon!";
-                setTimeout(function() {
-                    element.textContent = "Sports Thoughts";
-                }, 3000);
-            }
-            function comingSoonVG() {
-                let element = document.getElementById('notReadyVG');
-                element.textContent = "Coming Soon!";
-                setTimeout(function() {
-                    element.textContent = "Video Games I've Enjoyed";
-                }, 3000);
-            }
-            function comingSoonSW() {
-                let element = document.getElementById('notReadySW');
-                element.textContent = "Coming Soon!";
-                setTimeout(function() {
-                    element.textContent = "Star Wars Thoughts";
-                }, 3000);
-            }
-        </script>
-    </head>
-    <body>
-        <div class="background"></div>
-        <h1 class="name">Ricardo Merlin</h1>
-        <h2 class="job-title">Software Engineer</h2>
-        <h2 class="welcome-text">Welcome to my website. I'm currently in the early stages of my coding journey, so hopefully this website offers a good bit about me. Feel free to look around :).</h2>
-        <div class="main-container">
-            <div class="left-side">
-                <div class="pic-container">
-                    <img src="./myimages/ricardo.jpeg" alt="Ricardo Merlin" class="profile-pic">
-                </div>
-                <span class="personals">
-                    <div class="top-personals">
-                        <a class="logoGH" href="https://www.github.com/ricardomerlin">
-                            <img src="https://img.shields.io/badge/Github-black?style=for-the-badge&logo=github&logoColor=white" alt="Github Badge"/>
-                        </a>
-                        <a class="logoLI" href="https://www.linkedin.com/in/ricardo-merlin/">
-                            <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-                        </a>
-                    </div>
-                    <div class="bottom-personals">
-                        <a class="logoMD" href="https://medium.com/@rcrdmerlin">
-                            <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium Badge"/>
-                        </a>
-                        <a class="logoGM" href="mailto:rcrdmerlin@gmail.com">
-                            <img src="https://img.shields.io/badge/Gmail-white?style=for-the-badge&logo=gmail&logoColor=red" alt="Gmail Badge"/>
-                        </a>
-                    </div>
-                </span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo Merlin</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Ricardo Merlin</h1>
+        <h2>Software Engineer</h2>
+        <p>Welcome to my website. I'm currently in the early stages of my coding journey, so hopefully this website offers a good bit about me. Feel free to look around :).</p>
+    </header>
+    <main>
+        <aside class="sidebar">
+            <div class="profile-pic-container">
+                <img src="./myimages/ricardo.jpeg" alt="Ricardo Merlin" class="profile-pic">
             </div>
-            <div class="middle">
-                <div class="tech-list">
-                    <h2 class="tech-header">Technologies I've Worked With</h2>
-                    <span>
-                        <img src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg">
-                        <img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-ar21.svg">
-                        <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg">
-                        <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-ar21.svg">
-                    </span>
-                    <span>
-                        <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg">
-                        <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg">
-                        <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg">
-                        <img src="https://www.vectorlogo.zone/logos/github/github-ar21.svg">
-                    </span>
-                    <span>
-                        <img src="https://www.vectorlogo.zone/logos/python/python-ar21.svg">
-                        <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg">
-                        <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg">
-                        <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21.svg">
-                    </span>
-                    <span>
-                        <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg">
-                        <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-ar21.svg">
-                        <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg">
-                    </span>
+            <div class="contact-links">
+                <a href="https://www.github.com/ricardomerlin">
+                    <img src="https://img.shields.io/badge/Github-black?style=for-the-badge&logo=github&logoColor=white" alt="Github Badge">
+                </a>
+                <a href="https://www.linkedin.com/in/ricardo-merlin/">
+                    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+                </a>
+                <a href="https://medium.com/@rcrdmerlin">
+                    <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium Badge">
+                </a>
+                <a href="mailto:rcrdmerlin@gmail.com">
+                    <img src="https://img.shields.io/badge/Gmail-white?style=for-the-badge&logo=gmail&logoColor=red" alt="Gmail Badge">
+                </a>
+            </div>
+        </aside>
+        <section class="content">
+            <div class="tech-list">
+                <h2>Technologies I've Worked With</h2>
+                <div class="tech-icons">
+                    <img src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg" alt="JavaScript">
+                    <img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-ar21.svg" alt="TypeScript">
+                    <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" alt="React">
+                    <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-ar21.svg" alt="Azure">
+                    <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg" alt="Node.js">
+                    <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg" alt="Express">
+                    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git">
+                    <img src="https://www.vectorlogo.zone/logos/github/github-ar21.svg" alt="GitHub">
+                    <img src="https://www.vectorlogo.zone/logos/python/python-ar21.svg" alt="Python">
+                    <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg" alt="Flask">
+                    <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="Bootstrap">
+                    <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21.svg" alt="Tailwind CSS">
+                    <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="Django">
+                    <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-ar21.svg" alt="PostgreSQL">
+                    <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="MongoDB">
                 </div>
             </div>
-            <div class="right-side">
-                <div class="buttonList">
-                    <a class="dropbtnLS" href="lego.html">Lego Set Price Reviews</a>
-                    <a class="dropbtnST" id="notReadyST" onclick="comingSoonST()">Sports Thoughts</a>
-                    <a class="dropbtnSW" id="notReadySW" onclick="comingSoonSW()">Star Wars Thoughts</a>
-                    <a class="dropbtnVG" id="notReadyVG" onclick="comingSoonVG()">Video Games I've Enjoyed</a>
-                    <a class="dropbtnR16" id="randomMultiple" onclick="generateRandomMultiple()">Random Multiple of 2 Generator</a>
-                </div>
+            <div class="buttonList">
+                <a class="btn" href="lego.html">Lego Set Price Reviews</a>
+                <a class="btn" id="notReadyST" onclick="comingSoon('notReadyST', 'Sports Thoughts')">Sports Thoughts</a>
+                <a class="btn" id="notReadySW" onclick="comingSoon('notReadySW', 'Star Wars Thoughts')">Star Wars Thoughts</a>
+                <a class="btn" id="notReadyVG" onclick="comingSoon('notReadyVG', 'Video Games I've Enjoyed')">Video Games I've Enjoyed</a>
+                <a class="btn" id="randomMultiple" onclick="generateRandomMultiple()">Random Multiple of 2 Generator</a>
             </div>
-        </div>
-    </body>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Ricardo Merlin</p>
+    </footer>
+</body>
 </html>
