@@ -22,6 +22,7 @@ body {
 .main-container {
     display: flex;
     flex-direction: row;
+    padding: 0;
 }
 
 .left-side {
@@ -29,7 +30,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 33%;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 34%;
 }
 
 .right-side {
@@ -37,7 +46,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 33%;
 }
 
 
@@ -104,10 +113,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 10px;
-    background-color: #ffffff;
-    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+    margin-bottom: 10px;
 }
 
 .tech-header {
@@ -311,3 +319,4 @@ a.dropbtnGH, a.dropbtnLI, a.dropbtnMD, a.dropbtnST, a.dropbtnLS, a.dropbtnSW, a.
     text-align: center;
     font-size: 40px;
 }
+
